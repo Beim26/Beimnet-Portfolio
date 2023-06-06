@@ -1,0 +1,351 @@
+@import url("https://font.googleapis.com/css2? family=Poppins:wght@300;400;500;600;700;800;900& display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', Sans serif ;
+}
+body{
+     background: #081b29;
+     color: white;
+    
+
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: -1;
+
+}   
+.logo{
+    font-size: 25px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight: 600;
+    position: relative;
+}
+.navbar a{
+    font-size: 15px;
+    color: #ededed;
+    text-decoration: none;
+    font-weight:bold;
+    margin-left: 35px;
+    transition: 0.5s;
+}
+
+.navbar a:hover{
+        color:blue;
+    
+}   
+.home{
+    display:flex;
+    height:100vh;
+    align-items:center;
+    padding: 0 10%;
+    background: url("345.jpg") no repeat;
+    background-size:cover;
+    background-position: center;
+    display: flex;
+    align-items: center;  
+}
+
+.home-content{
+    max-width: 600px; 
+}
+.home-content h1{
+    font-size: 56px;
+    font-weight: bold;
+    line-height:2.0;
+    position:relative;
+}
+.home-content h2{
+color:white;
+letter-spacing: 2px;
+font-size: 22px;
+margin-bottom: 25px;
+text-transform: capitalize;
+position: relative;
+}
+.home-content p{
+    font-size: 17px;
+    margin:20px 0 40px;
+    font-family: Sans-serif;
+    letter-spacing: 1px;
+    line-height: 28px; 
+    position:relative;
+};
+.home-content .btn-box{
+    display: flex;
+    justify-content: space-between;
+    width:345px;
+    height:50px;
+}
+.btn-box a{
+   position: relative;
+   display: inline-flex;
+   justify-content:center;
+   align-items:center;
+   width: 150px;
+   height: 100%;
+   background:#f9004d;
+   border: 2px solid transparent;
+   border-radius: 8px;
+   font-size:15px;
+   color:white;
+   text-decoration: none;
+   font-weight: bold;
+   letter-spacing:1px;
+   z-index: 1;
+   overflow:hidden;   
+   padding: 14px 30px;
+}
+.btn-box a:hover{
+   background-color: #f9004d ;
+   color: yellow;
+   border: 2px solid #f9004d;
+}
+.btn-box a::before{
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: red;
+    z-index: -1;
+    background: #f9004d;
+}
+  
+.btn-box a:hover::before{
+    width:100%;
+}
+.newsletter form{
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+.newsletter form input:first-child{
+    display: block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #f9004d; 
+    outline: none;
+    border-radius: 30px; 
+}
+.newsletter form input:last-child{
+    position: absolute;
+    display: block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #f9004d;
+    color:white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #858585; 
+    top: 6px;
+    right: 6px;
+}
+.contact-me
+{
+width: 100%;
+height: 290px;
+background: #191919;
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
+}
+.contact-me p{
+    color:white;
+    font-size:30px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+.contact-me .button-two{
+    background-color:#f9004d;
+    color:white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.5;
+}
+.contact-me .button-two:hover{
+    color:yellow;
+}
+.card{
+    height:200px;
+    margin: 50px;
+    box-shadow:5px 5px 20px black;
+    overflow:hidden;
+}
+.heading{
+    text-align:center;
+    font-weight:bold;
+    font-size:25px;
+}
+.button{
+    background-color:#f9004d;
+    color:white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;
+    border-radius: 30px;
+    transition: 0.5;
+    font-size:15px;
+}
+.button:hover{
+    color:yellow;
+}
+
+.box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 400px;
+
+}
+.logo::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+.card{
+    height: 365px;
+    width: 335px;
+    padding: 20px 35px;
+    background:cyan;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+.card i{
+    font-size: 50px;
+    display: block;
+    text-align: center;
+    margin: 25px 0px;
+    color: #f9004d;
+}
+.paragraph{
+    color:black;
+    font-size: 16px;
+    line-height: 27px;
+    margin-bottom: 25px;
+}
+.title{
+    font-weight:bold;
+    font-size:50px;
+    color:black;
+}
+.handle{
+   font-weight:bold;
+   font-size: 15px;
+   color: white;
+}
+@keyframes showRight{
+    100%{
+        width: 0;
+    }
+}
+.home-content h1::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+.home-content h2::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+}
+.home-content p::before{
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width:100%;
+    height: 100%;
+    background: #081b29;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.7s;
+}
+.social{
+    width: 45px;
+    height: 45px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: cyan;
+    border-radius: 35%;
+    margin: 22px 10px;
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+}
+.social a:hover{
+    transform: scale(1.3);
+    transition: .3s;
+}
+@media screen and (max-width:600px){
+    h1{
+        font-size: 50px;
+        line-height: 35px;
+    }
+   .navbar{
+    width: 100%;
+    height: 50px;
+    top: auto;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    box-sizing: border-box;
+   }   
+}
+.card:hover{
+    background-color: #F0C993;
+    cursor:pointer;
+    color: white;
+    transform:scale(1.0);
+    transition: all is ease;
+}
+@media screen(max-width:320px){
+    .card{
+        flex-direction:column;
+        margin-top: 2px;
+    }
+    .card .paragraph{
+        justify-content: center;
+    }
+}
